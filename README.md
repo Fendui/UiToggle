@@ -92,8 +92,8 @@ A wrapper component that provides an easy way to switch between two states
 <em>With two seperate elements to set the state of </em><code>toggleState</code>
  
 <pre><code>&lt;div id='app'&gt;
- &lt;UiToggle v-slot="{toggle}" v-model='toggleState'&gt;
-  &lt;div :class="{primary: toggleState}"&gt;
+ &lt;UiToggle v-slot="{toggle}" v-model='<em>toggleState</em>'&gt;
+  &lt;div :class="{primary: <em>toggleState</em>}"&gt;
     &lt;button @click='()=> toggle(true)'&gt;
       I set the state to <strong>true</strong>!
     &lt;/button&gt;
