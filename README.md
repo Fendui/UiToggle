@@ -78,6 +78,17 @@ A wrapper component that provides an easy way to switch between two states
 &lt;/div&gt;
 </code></pre>
 
+<em>Disabled (will silently not toggle)</em>
+ 
+<pre><code>&lt;div id='app'&gt;
+ &lt;UiToggle v-slot="{toggle, active}" disabled&gt;
+  &lt;button @click="toggle" &gt;
+    I am active: {{active}}
+  &lt;/button&gt;
+ &lt;/UiToggle&gt;
+&lt;/div&gt;
+</code></pre>
+
 <em>With an active class</em>
  
 <pre><code>&lt;div id='app'&gt;
